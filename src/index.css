@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f8fa;
+  color: #101820;
+  font-family: Inter, "Avenir Next", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.arch-outline {
+  position: relative;
+  border: 2px solid rgba(217, 192, 139, 0.75);
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+}

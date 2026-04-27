@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ria-arch-landing:latest
+    container_name: ria-arch-landing
+    ports:
+      - "8080:80"
+    restart: unless-stopped
