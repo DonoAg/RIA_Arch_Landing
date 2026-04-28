@@ -7,6 +7,7 @@ import {
   FileCheck2,
   FileSignature,
   Gauge,
+  Handshake,
   Layers,
   LayoutDashboard,
   MessageSquare,
@@ -15,7 +16,7 @@ import {
   Scale,
   Share2,
   ShieldCheck,
-  Smile,
+  Users,
   Wrench,
   Workflow,
 } from 'lucide-react'
@@ -35,7 +36,7 @@ const pillars = [
   },
   {
     title: 'Modern Onboarding',
-    body: 'Digital onboarding and automation with multicustodian orchestration built for speed.',
+    body: 'Digital onboarding and automation with multi-custodian orchestration built for speed.',
     icon: Workflow,
   },
 ]
@@ -88,18 +89,24 @@ const benefits = [
     title: 'Improved Client Experience',
     description:
       'Clear communication and streamlined onboarding create a smoother client transition journey.',
-    icon: Smile,
+    icon: Handshake,
   },
 ]
 
 const capabilities = [
+  { title: 'Build and execute a project plan', icon: ClipboardList },
+  { title: 'Advisor + client communication templates', icon: MessageSquare },
+  {
+    title: 'Advisory agreement and change of broker dealer (if applicable)',
+    icon: FileCheck2,
+  },
+  { title: 'Household data ingestion', icon: Database },
   { title: 'Digital onboarding workflows', icon: ClipboardList },
   { title: 'DocuSign envelope automation', icon: FileSignature },
-  { title: 'Multicustodian orchestration', icon: Share2 },
-  { title: 'Household data ingestion', icon: Database },
-  { title: 'Transition project dashboard', icon: LayoutDashboard },
+  { title: 'Multi-custodian orchestration', icon: Share2 },
   { title: 'Compliance-aligned workflows', icon: Scale },
-  { title: 'Advisor + client communication templates', icon: MessageSquare },
+  { title: 'Transition project dashboard', icon: LayoutDashboard },
+  { title: 'Experienced onboarding resources with on-site or remote support', icon: Users },
 ]
 
 function App() {
@@ -184,7 +191,7 @@ function App() {
             <span className="text-gold-400">•</span>
             <span>Independent broker-dealers</span>
             <span className="text-gold-400">•</span>
-            <span>Multicustodian RIAs</span>
+            <span>Multi-custodian RIAs</span>
             <span className="text-gold-400">•</span>
             <span>Breakaway teams</span>
           </div>
@@ -229,17 +236,14 @@ function App() {
             title="A transition framework built for clarity and confidence."
           />
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {methodSteps.map((step, index) => {
+            {methodSteps.map((step) => {
               const Icon = step.icon
               return (
                 <article
                   key={step.title}
                   className="rounded-2xl border border-slate-200 bg-slate-50/70 p-6"
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-semibold uppercase tracking-widest text-slate-400">
-                      0{index + 1}
-                    </span>
+                  <div className="flex justify-end">
                     <Icon size={22} className="text-gold-400" />
                   </div>
                   <h3 className="mt-4 text-xl font-semibold text-navy-900">{step.title}</h3>
