@@ -16,7 +16,7 @@ const founders: Founder[] = [
     role: 'Founder & CEO',
     image: '/adrian-larsen-headshot.png',
     bio: [
-      'Adrian Larsen has over 15 years of experience in RIA onboarding, custody platform strategy, and advisor transitions. He has held key roles at Fidelity Investments and LPL Financial, where he led complex RIA implementations, platform design initiatives, and large scale breakaway transitions. Adrian brings deep operational expertise and a modern, structured approach to helping advisors launch and scale independent firms with confidence.',
+      'Adrian Larsen has over 25 years of experience in RIA onboarding, custody platform strategy, and advisor transitions. He has held key roles at Fidelity Investments and LPL Financial, where he led complex RIA implementations, platform design initiatives, and large scale breakaway transitions. Adrian brings deep operational expertise and a modern, structured approach to helping advisors launch and scale independent firms with confidence.',
       'Across every role, Adrian has been the structural guide behind successful transitions, blending strategic clarity, operational precision, and a deep understanding of advisor psychology. His work has supported hundreds of advisors in launching, scaling, and optimizing their independent firms.',
       'Today, he brings that expertise to RIA Arch, helping advisors engineer the passage to independence with confidence and modern, platform ready structure.',
     ],

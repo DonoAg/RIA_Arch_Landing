@@ -1,23 +1,16 @@
 import {
   ArrowRight,
-  Building2,
   ClipboardList,
-  Compass,
   Database,
   FileCheck2,
   FileSignature,
   Gauge,
   Handshake,
-  Layers,
   LayoutDashboard,
   MessageSquare,
   Network,
-  Rocket,
-  Scale,
-  Share2,
   ShieldCheck,
   Users,
-  Wrench,
   Workflow,
 } from 'lucide-react'
 import { ReadyToBuildCta } from '../components/ReadyToBuildCta'
@@ -26,83 +19,83 @@ import { SectionHeader } from '../components/SectionHeader'
 
 const pillars = [
   {
-    title: 'Structural Expertise',
-    body: 'We design every workflow, form, and decision point with architectural precision.',
-    icon: Layers,
+    title: 'Import Data from Any Source',
+    body: 'We pull data from your current tools, reports, and files so your team avoids manual re-entry.',
+    icon: Database,
   },
   {
-    title: 'Guided Journey',
-    body: 'From planning to launch day, we guide advisors through every step of the transition.',
-    icon: Compass,
+    title: 'Validate, Resolve, and Standardize',
+    body: 'RIA Arch fills in data, flags issues, and helps you fix them before anything is submitted.',
+    icon: ShieldCheck,
   },
   {
-    title: 'Modern Onboarding',
-    body: 'Digital onboarding and automation with multi-custodian orchestration built for speed.',
-    icon: Workflow,
+    title: 'Technology First, Expert Backed',
+    body: 'Experienced transition specialists support planning, templates, and exception resolution.',
+    icon: Users,
   },
 ]
 
 const methodSteps = [
   {
-    title: 'Blueprint',
-    detail: 'Strategic planning, vendor selection, compliance readiness, and launch architecture.',
-    icon: FileCheck2,
+    title: 'Ingest',
+    detail: 'Upload any exports, statements, or files you have and RIA Arch will automatically extract relevant data.',
+    icon: Database,
   },
   {
-    title: 'Build',
-    detail: 'Data ingestion, account mapping, workflow design, and operational setup.',
-    icon: Building2,
+    title: 'Validate and Resolve',
+    detail:
+      'We flag missing or conflicting information so you can correct it quickly in one place.',
+    icon: ShieldCheck,
   },
   {
-    title: 'Transition',
-    detail: 'Repapering, envelope automation, custodian coordination, and client communication.',
+    title: 'Pre-Fill and Standardize',
+    detail: 'Clean data is used to pre-fill custodian paperwork and other downstream systems.',
+    icon: FileSignature,
+  },
+  {
+    title: 'Submit with confidence',
+    detail: 'Send for eSignature or upload to your systems with fewer errors and less rework.',
     icon: Network,
-  },
-  {
-    title: 'Launch',
-    detail: 'Day-one readiness, platform training, and post-launch optimization.',
-    icon: Rocket,
   },
 ]
 
 const benefits = [
   {
-    title: 'Confidence in the Execution Strategy',
-    description: 'A structured, end-to-end transition framework creates clarity on what happens next.',
-    icon: ShieldCheck,
-  },
-  {
-    title: 'Faster Onboarding',
-    description: 'Digital-first onboarding workflows reduce friction and accelerate account activation.',
+    title: 'Transition Faster',
+    description: 'Automation cuts manual work so you can complete your transition sooner.',
     icon: Gauge,
   },
   {
-    title: 'Less Operational Effort to Transition',
-    description: 'Automated workflows and coordinated task orchestration remove manual operational drag.',
-    icon: Wrench,
+    title: 'Fewer NIGOs and Rework',
+    description: 'Issues are caught early, so fewer items come back for correction.',
+    icon: FileCheck2,
   },
   {
-    title: 'Improved Client Experience',
-    description:
-      'Clear communication and streamlined onboarding create a smoother client transition journey.',
+    title: 'More Consistent Data',
+    description: 'The same clean data flows into your core systems and reduces mismatches.',
+    icon: Workflow,
+  },
+  {
+    title: 'Less Stress on your Team',
+    description: 'Your specialist helps with planning, communications, and exceptions when they happen.',
     icon: Handshake,
   },
 ]
 
-const capabilities = [
-  { title: 'Build and execute a project plan', icon: ClipboardList },
-  { title: 'Advisor + client communication templates', icon: MessageSquare },
-  {
-    title: 'Advisory agreement and change of broker dealer (if applicable)',
-    icon: FileCheck2,
-  },
-  { title: 'Household data ingestion', icon: Database },
-  { title: 'Digital onboarding workflows', icon: ClipboardList },
-  { title: 'DocuSign envelope automation', icon: FileSignature },
-  { title: 'Multi-custodian orchestration', icon: Share2 },
-  { title: 'Compliance-aligned workflows', icon: Scale },
-  { title: 'Transition project dashboard', icon: LayoutDashboard },
-  { title: 'Experienced onboarding resources with on-site or remote support', icon: Users },
+const platformCapabilities = [
+  { title: 'Pull data from your current tools, reports, and files', icon: Database },
+  { title: 'Auto-fill key fields to save time', icon: Workflow },
+  { title: 'Flag missing or conflicting information', icon: ShieldCheck },
+  { title: 'Review and fix issues in one digital workspace', icon: LayoutDashboard },
+  { title: 'Pre-fill custodian forms for eSignature or upload', icon: FileSignature },
+  { title: 'Send clean data to your core business systems', icon: Network },
+]
+
+const expertSupportCapabilities = [
+  { title: 'Transition specialist to build and execute the project plan', icon: ClipboardList },
+  { title: 'Advisor and client communication template development', icon: MessageSquare },
+  { title: 'Hands-on review of data before final submission', icon: FileCheck2 },
+  { title: 'Help resolving exceptions if anything slips through', icon: Users },
 ]
 
 export function WelcomePage() {
@@ -110,16 +103,16 @@ export function WelcomePage() {
     <main id="top">
       <Section className="relative overflow-hidden bg-hero-glow pb-20 pt-20 text-white md:pt-28">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-900/35 via-navy-900/10 to-transparent" />
-        <div className="grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="relative rounded-3xl border border-white/15 bg-navy-900/35 p-8 shadow-panel backdrop-blur-sm md:p-10">
+        <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="relative rounded-3xl border border-white/15 bg-navy-900/35 p-7 shadow-panel backdrop-blur-sm md:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-100">
               RIA Arch
             </p>
-            <h1 className="mt-5 text-4xl font-semibold leading-tight text-white md:text-6xl">
-              Your gateway to independence.
+            <h1 className="mt-5 text-4xl font-semibold leading-tight text-white md:text-5xl">
+            Your gateway to independence.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-100">
-              Architectural precision for advisor transitions, onboarding, and RIA launch execution.
+              RIA Arch ingests data from any source, validates and standardizes it, then pre-fills and submits clean data to custodians and enterprise systems.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
@@ -133,11 +126,15 @@ export function WelcomePage() {
             </div>
           </div>
 
-          <div className="relative mx-auto flex h-[300px] w-full max-w-[350px] items-center justify-center rounded-3xl border border-gold-200/60 bg-navy-900/55 p-4 shadow-panel ring-1 ring-white/20 backdrop-blur-md">
+          <div className="relative mx-auto flex w-full max-w-[640px] items-center justify-center rounded-3xl border border-gold-200/60 bg-navy-900/55 p-3 shadow-panel ring-1 ring-white/20 backdrop-blur-md">
             <img
-              src="/favicon.png"
-              alt="RIA Arch icon"
-              className="h-full w-full max-h-[270px] max-w-[270px] object-contain"
+              src="/ria-arch-technology-flow-expert-guidance.png"
+              alt="RIA Arch technology flow from source data to validated destination uploads"
+              className="h-full w-full rounded-2xl object-cover"
+              onError={(event) => {
+                event.currentTarget.src = '/favicon.png'
+                event.currentTarget.className = 'h-full w-full max-h-[270px] max-w-[270px] object-contain'
+              }}
             />
           </div>
         </div>
@@ -158,11 +155,12 @@ export function WelcomePage() {
         </div>
       </Section>
 
-      <Section id="services" className="bg-slate-50">
+      <Section id="value" className="bg-slate-50">
         <SectionHeader
           centered
-          eyebrow="Value Proposition"
-          title="Independence is not a leap, it is an engineered journey."
+          eyebrow="WHY RIA ARCH?"
+          title="Leverage Industry Expertise and Cutting-Edge Technology"
+          subtitle="RIA Arch provides expert support through the transition process while utilizing technology to automate the heavy lifting."
         />
         <div className="grid gap-6 md:grid-cols-3">
           {pillars.map((pillar) => {
@@ -184,7 +182,7 @@ export function WelcomePage() {
             href="#process"
             className="inline-flex items-center gap-2 text-sm font-semibold text-navy-700 transition hover:text-navy-900"
           >
-            Explore The RIA Arch Method
+            See The 4-Step Process
             <ArrowRight size={16} />
           </a>
         </div>
@@ -194,31 +192,50 @@ export function WelcomePage() {
         <SectionHeader
           centered
           eyebrow="The RIA Arch Method"
-          title="A transition framework built for clarity and confidence."
+          title="A simple process that helps you move faster with fewer errors."
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {methodSteps.map((step) => {
+          {methodSteps.map((step, index) => {
             const Icon = step.icon
             return (
               <article
                 key={step.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50/70 p-6"
+                className="relative rounded-2xl border border-slate-200 bg-slate-50/70 p-6"
               >
                 <div className="flex justify-end">
                   <Icon size={22} className="text-gold-400" />
                 </div>
                 <h3 className="mt-4 text-xl font-semibold text-navy-900">{step.title}</h3>
                 <p className="mt-3 leading-relaxed text-slate-600">{step.detail}</p>
+                {index < methodSteps.length - 1 ? (
+                  <div className="pointer-events-none absolute -right-5 top-1/2 hidden -translate-y-1/2 xl:flex">
+                    <div className="rounded-full border border-slate-200 bg-white p-1.5 shadow-sm">
+                      <ArrowRight size={14} className="text-gold-500" />
+                    </div>
+                  </div>
+                ) : null}
               </article>
             )
           })}
+          <article className="rounded-2xl border border-slate-200 bg-slate-50/70 p-6 md:col-span-2 xl:col-span-4">
+            <div className="flex justify-end">
+              <Users size={22} className="text-gold-400" />
+            </div>
+            <h3 className="mt-4 text-xl font-semibold text-navy-900">
+              Expert Support Through Every Step
+            </h3>
+            <p className="mt-3 leading-relaxed text-slate-600">
+              While the platform handles the heavy lifting, your transition specialist helps you plan,
+              communicate with clients, and resolve exceptions at each stage of the process.
+            </p>
+          </article>
         </div>
         <div className="mt-10 text-center">
           <a
             href="#benefits"
             className="inline-flex items-center gap-2 text-sm font-semibold text-navy-700 transition hover:text-navy-900"
           >
-            See Service Benefits
+            Services and Outcomes
             <ArrowRight size={16} />
           </a>
         </div>
@@ -227,14 +244,31 @@ export function WelcomePage() {
       <Section id="benefits" className="bg-slate-50">
         <SectionHeader
           centered
-          eyebrow="Digital First Benefits"
-          title="RIA Arch Utilizes a Digital-First Approach to Guide Your Transition Seamlessly."
+          eyebrow="TECHNOLOGY AND EXPERTISE COMBINED TO SUPPORT YOUR TRANSITION"
+          title="Less Manual Work, Fewer Errors, and Expert Support."
         />
-        <div className="grid items-stretch gap-8 lg:grid-cols-2">
+        <div className="grid items-stretch gap-8 lg:grid-cols-3">
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-            <h3 className="text-xl font-semibold text-navy-900">Services</h3>
+            <h3 className="text-xl font-semibold text-navy-900">Platform Capabilities</h3>
             <ul className="mt-6 space-y-4">
-              {capabilities.map((item) => {
+              {platformCapabilities.map((item) => {
+                const Icon = item.icon
+                return (
+                  <li key={item.title} className="flex items-start gap-3 text-slate-700">
+                    <div className="inline-flex rounded-lg bg-gold-100 p-2">
+                      <Icon className="shrink-0 text-navy-900" size={16} />
+                    </div>
+                    <span>{item.title}</span>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <h3 className="text-xl font-semibold text-navy-900">Expert Guidance</h3>
+            <ul className="mt-6 space-y-4">
+              {expertSupportCapabilities.map((item) => {
                 const Icon = item.icon
                 return (
                   <li key={item.title} className="flex items-start gap-3 text-slate-700">

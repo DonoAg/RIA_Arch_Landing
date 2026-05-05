@@ -12,8 +12,8 @@ export function SiteHeader() {
           <img src="/ria-arch-logo.png" alt="RIA Arch" className="h-10 w-auto rounded-sm" />
         </a>
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-700 lg:flex">
-          <a href="#services" className="transition hover:text-navy-900">
-            Services
+          <a href="#value" className="transition hover:text-navy-900">
+            Why RIA Arch?
           </a>
           <a href="#process" className="transition hover:text-navy-900">
             Method
