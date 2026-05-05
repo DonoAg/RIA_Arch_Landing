@@ -28,7 +28,7 @@ const founders: Founder[] = [
     bio: [
       'Stephen Donovan has over 10 years of experience developing technology in financial services. He was a product manager for Fidelity Wealthscape℠, focused on improving the operational experience for RIAs and Independent Broker Dealers. He then moved to an internal Fidelity team focused on utilizing emerging technologies to automate internal operational workflows.',
       'In 2025 he left Fidelity to launch Practycl AI, which utilizes AI to help custom manufacturing teams price their products based on the value they deliver to their customers instead of their input costs.',
-      'In 2026 he joined Adrian in founding RIA Arch, bringing together his expertise in RIA firms operations and his experience developing AI and ML based systems.',
+      "In 2026 he joined Adrian in founding RIA Arch, bringing together his expertise in RIA firms' operations and his experience developing AI and ML based systems.",
     ],
   },
 ]
