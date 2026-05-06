@@ -19,18 +19,18 @@ import { SectionHeader } from '../components/SectionHeader'
 
 const pillars = [
   {
-    title: 'Import Data from Any Source',
-    body: 'We pull data from your current tools, reports, and files so your team avoids manual re-entry.',
+    title: 'Bring Data In From Anywhere',
+    body: 'Pull information from your existing tools, reports, and files eliminating manual re-entry for your team',
     icon: Database,
   },
   {
     title: 'Validate, Resolve, and Standardize',
-    body: 'RIA Arch fills in data, flags issues, and helps you fix them before anything is submitted.',
+    body: 'RIA Arch auto-fills missing fields, flags inconsistencies, and guides you through fixes before anything is submitted',
     icon: ShieldCheck,
   },
   {
-    title: 'Technology First, Expert Backed',
-    body: 'Experienced transition specialists support planning, templates, and exception resolution.',
+    title: 'Automation at the Core, Experts Behind Every Step',
+    body: 'Transition specialists support planning, templates, and exception handling while the platform automates the heavy lift',
     icon: Users,
   },
 ]
@@ -38,23 +38,22 @@ const pillars = [
 const methodSteps = [
   {
     title: 'Ingest',
-    detail: 'Upload any exports, statements, or files you have and RIA Arch will automatically extract relevant data.',
+    detail: 'Upload any exports, statements, or files and RIA Arch automatically extracts and organizes the relevant data',
     icon: Database,
   },
   {
-    title: 'Validate and Resolve',
-    detail:
-      'We flag missing or conflicting information so you can correct it quickly in one place.',
+    title: 'Validate & Resolve',
+    detail: 'Missing, conflicting, or incomplete information is flagged instantly so you can correct everything in one place',
     icon: ShieldCheck,
   },
   {
-    title: 'Pre-Fill and Standardize',
-    detail: 'Clean data is used to pre-fill custodian paperwork and other downstream systems.',
+    title: 'Pre-Fill & Standardize',
+    detail: 'Clean, standardized data is used to pre-fill custodian paperwork and populate downstream systems',
     icon: FileSignature,
   },
   {
-    title: 'Submit with confidence',
-    detail: 'Send for eSignature or upload to your systems with fewer errors and less rework.',
+    title: 'Submit with Confidence',
+    detail: 'Send for eSignature or upload to your systems with fewer errors, less rework, and a smoother transition',
     icon: Network,
   },
 ]
@@ -62,22 +61,22 @@ const methodSteps = [
 const benefits = [
   {
     title: 'Transition Faster',
-    description: 'Automation cuts manual work so you can complete your transition sooner.',
+    description: 'Automation cuts manual work so you can complete your transition sooner',
     icon: Gauge,
   },
   {
     title: 'Fewer NIGOs and Rework',
-    description: 'Issues are caught early, so fewer items come back for correction.',
+    description: 'Issues are caught early, so fewer items come back for correction',
     icon: FileCheck2,
   },
   {
     title: 'More Consistent Data',
-    description: 'The same clean data flows into your core systems and reduces mismatches.',
+    description: 'The same clean data flows into your core systems and reduces mismatches',
     icon: Workflow,
   },
   {
     title: 'Less Stress on your Team',
-    description: 'Your specialist helps with planning, communications, and exceptions when they happen.',
+    description: 'Your specialist helps with planning, communications, and exceptions when they happen',
     icon: Handshake,
   },
 ]
@@ -109,10 +108,11 @@ export function WelcomePage() {
               RIA Arch
             </p>
             <h1 className="mt-5 text-4xl font-semibold leading-tight text-white md:text-5xl">
-            Your gateway to independence.
+            Your gateway to independence
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-100">
-              RIA Arch ingests data from any source, validates and standardizes it, then pre-fills and submits clean data to custodians and enterprise systems.
+            <p className="mt-6 max-w-2xl text-xl leading-relaxed text-slate-100 md:text-[1.35rem]">
+              RIA Arch unifies data from any source, validates and standardizes it, then delivers
+              clean, pre-filled submissions directly to custodians and enterprise systems
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
@@ -141,17 +141,17 @@ export function WelcomePage() {
       </Section>
 
       <Section className="bg-white py-10">
-        <p className="text-center text-sm font-medium text-slate-600">
-          Trusted by advisors transitioning from the industry&apos;s leading firms.
+        <p className="text-center text-sm font-medium text-slate-600 md:text-base">
+          Chosen by top advisors and firms navigating complex transitions
         </p>
-        <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-          <span>Wirehouse advisors</span>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-navy-800 md:text-base">
+          <span>Wirehouse teams</span>
           <span className="text-gold-400">•</span>
           <span>Independent broker-dealers</span>
           <span className="text-gold-400">•</span>
           <span>Multi-custodian RIAs</span>
           <span className="text-gold-400">•</span>
-          <span>Breakaway teams</span>
+          <span>Breakaway RIA&apos;s</span>
         </div>
       </Section>
 
@@ -159,8 +159,8 @@ export function WelcomePage() {
         <SectionHeader
           centered
           eyebrow="WHY RIA ARCH?"
-          title="Leverage Industry Expertise and Cutting-Edge Technology"
-          subtitle="RIA Arch provides expert support through the transition process while utilizing technology to automate the heavy lifting."
+          title="Where Expert Guidance Meets Automated Precision"
+          subtitle="RIA Arch supports your transition end-to-end and uses modern automation to handle the complex, time-consuming work"
         />
         <div className="grid gap-6 md:grid-cols-3">
           {pillars.map((pillar) => {
@@ -192,7 +192,7 @@ export function WelcomePage() {
         <SectionHeader
           centered
           eyebrow="The RIA Arch Method"
-          title="A simple process that helps you move faster with fewer errors."
+          title="A streamlined process that accelerates transitions and reduces errors"
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {methodSteps.map((step, index) => {
@@ -222,11 +222,11 @@ export function WelcomePage() {
               <Users size={22} className="text-gold-400" />
             </div>
             <h3 className="mt-4 text-xl font-semibold text-navy-900">
-              Expert Support Through Every Step
+              Human Expertise Guiding Your Transition
             </h3>
             <p className="mt-3 leading-relaxed text-slate-600">
-              While the platform handles the heavy lifting, your transition specialist helps you plan,
-              communicate with clients, and resolve exceptions at each stage of the process.
+              RIA Arch&apos;s transition specialist helps you plan, communicate with clients, and
+              resolve exceptions
             </p>
           </article>
         </div>
@@ -244,8 +244,8 @@ export function WelcomePage() {
       <Section id="benefits" className="bg-slate-50">
         <SectionHeader
           centered
-          eyebrow="TECHNOLOGY AND EXPERTISE COMBINED TO SUPPORT YOUR TRANSITION"
-          title="Less Manual Work, Fewer Errors, and Expert Support."
+          eyebrow="TECHNOLOGY + EXPERTISE SUPPORTING EVERY TRANSITION"
+          title="Less Manual Work, Fewer Errors, and Expert Support"
         />
         <div className="grid items-stretch gap-8 lg:grid-cols-3">
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
