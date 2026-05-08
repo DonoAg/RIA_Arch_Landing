@@ -151,7 +151,7 @@ export function WelcomePage() {
           <span className="text-gold-400">•</span>
           <span>Multi-custodian RIAs</span>
           <span className="text-gold-400">•</span>
-          <span>Breakaway RIA&apos;s</span>
+          <span>Breakaway RIAs</span>
         </div>
       </Section>
 
