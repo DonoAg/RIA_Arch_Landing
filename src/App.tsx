@@ -2,10 +2,19 @@ import { useEffect, useState } from 'react'
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
 import { AboutPage } from './pages/AboutPage'
+import { FaqPage } from './pages/FaqPage'
 import { WelcomePage } from './pages/WelcomePage'
 
 function getCurrentPage() {
-  return window.location.hash === '#/about' ? 'about' : 'home'
+  if (window.location.hash === '#/about') {
+    return 'about'
+  }
+
+  if (window.location.hash === '#/faq') {
+    return 'faq'
+  }
+
+  return 'home'
 }
 
 function App() {
@@ -17,7 +26,7 @@ function App() {
 
       setPage(nextPage)
       requestAnimationFrame(() => {
-        if (nextPage === 'about') {
+        if (nextPage === 'about' || nextPage === 'faq') {
           window.scrollTo({ top: 0, behavior: 'smooth' })
           return
         }
@@ -36,7 +45,7 @@ function App() {
   return (
     <div className="text-charcoal">
       <SiteHeader />
-      {page === 'about' ? <AboutPage /> : <WelcomePage />}
+      {page === 'about' ? <AboutPage /> : page === 'faq' ? <FaqPage /> : <WelcomePage />}
       <SiteFooter />
     </div>
   )
