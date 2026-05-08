@@ -53,7 +53,7 @@ export function FaqPage() {
             FAQ
           </p>
           <h1 className="mt-5 text-4xl font-semibold leading-tight text-white md:text-6xl">
-            Answer for Advisors Preparing to Transition
+            Answers for Advisors Preparing to Transition
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-100">
             Learn how RIA Arch combines a guided consulting experience with a secure digital
