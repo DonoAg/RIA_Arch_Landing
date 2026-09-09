@@ -23,3 +23,18 @@ body {
   border-bottom: 0;
   border-radius: 999px 999px 0 0;
 }
+
+@media print {
+  header,
+  footer {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+}

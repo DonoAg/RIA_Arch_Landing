@@ -3,9 +3,14 @@ import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
 import { AboutPage } from './pages/AboutPage'
 import { FaqPage } from './pages/FaqPage'
+import { OverviewPage } from './pages/OverviewPage'
 import { WelcomePage } from './pages/WelcomePage'
 
 function getCurrentPage() {
+  if (window.location.hash === '#/overview') {
+    return 'overview'
+  }
+
   if (window.location.hash === '#/about') {
     return 'about'
   }
@@ -26,7 +31,7 @@ function App() {
 
       setPage(nextPage)
       requestAnimationFrame(() => {
-        if (nextPage === 'about' || nextPage === 'faq') {
+        if (nextPage === 'overview' || nextPage === 'about' || nextPage === 'faq') {
           window.scrollTo({ top: 0, behavior: 'smooth' })
           return
         }
@@ -45,7 +50,15 @@ function App() {
   return (
     <div className="text-charcoal">
       <SiteHeader />
-      {page === 'about' ? <AboutPage /> : page === 'faq' ? <FaqPage /> : <WelcomePage />}
+      {page === 'overview' ? (
+        <OverviewPage />
+      ) : page === 'about' ? (
+        <AboutPage />
+      ) : page === 'faq' ? (
+        <FaqPage />
+      ) : (
+        <WelcomePage />
+      )}
       <SiteFooter />
     </div>
   )

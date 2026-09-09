@@ -1,7 +1,7 @@
 export function SiteFooter() {
   return (
     <footer className="bg-navy-900 px-6 py-14 text-slate-300 md:px-10">
-      <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-5">
+      <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-3 lg:grid-cols-6">
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-widest text-gold-200">
             Why RIA Arch?
@@ -20,6 +20,12 @@ export function SiteFooter() {
           <h4 className="text-sm font-semibold uppercase tracking-widest text-gold-200">Benefits</h4>
           <a href="#benefits" className="mt-3 block text-sm text-slate-400 hover:text-gold-200">
             Transition Outcomes
+          </a>
+        </div>
+        <div>
+          <h4 className="text-sm font-semibold uppercase tracking-widest text-gold-200">Overview</h4>
+          <a href="#/overview" className="mt-3 block text-sm text-slate-400 hover:text-gold-200">
+            Fact Sheet
           </a>
         </div>
         <div>
