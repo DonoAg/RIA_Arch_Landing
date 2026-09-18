@@ -162,7 +162,7 @@ const tiers = [
   {
     id: 'custodianOnly' as const,
     name: 'Custodian Only',
-    tagline: 'Custodian-led preparation with RIA Arch support',
+    tagline: 'Custodial account preparation with RIA Arch Support',
     recommended: false,
   },
   {
