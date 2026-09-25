@@ -141,7 +141,7 @@ const featureRows: FeatureRow[] = [
   {
     label: 'Error resolution and submission support',
     whiteGlove: true,
-    custodianOnly: true,
+    custodianOnly: false,
     aiAssisted: false,
   },
   {
